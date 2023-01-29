@@ -7,7 +7,7 @@ import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 
 const client = new ApolloClient({
-  uri: 'https://flyby-gateway.herokuapp.com/', //uri to be changed
+  uri: 'https://graphql-checklist-sy.hasura.app/v1/graphql',
   cache: new InMemoryCache(),
   connectToDevTools: true, //To enable the devtools in your app in production
 });
