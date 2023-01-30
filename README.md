@@ -6,4 +6,6 @@ The project itself comes from `the React Bootcamp` promoted by [freeCodeCamp](ht
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Keywords: react, graphQL, Apollo, ckecklist app
+Hasura is used to provide the backend service linked to a Neon database
+
+Keywords: react, graphQL, Apollo, Hasura, ckecklist app
