@@ -1,0 +1,38 @@
+.form {
+    background-color: black;
+    color:rgb(0, 255, 255);
+    padding: 0 1em;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    margin: 2em auto;
+}
+
+.form__title {
+    font-size: 1.5em;
+}
+
+.form__input {
+    flex: 1;
+    border-radius: 0.25em;
+    line-height: 2em;
+    padding: 0 0.25em;
+    font-size: 1.25em;
+    margin: 0 0.5em;
+}
+
+.form__button--submit {
+    padding: 0.5em;
+    color: yellow;
+    background-color: black;
+    border: 2px solid yellow;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.75vh 0.05vh rgba(255, 255, 0, 1);
+    position: relative;
+}
+
+.form__button--submit::after {
+    content: "Create";
+    background-color: yellow;
+    color: black;
+}
+  
