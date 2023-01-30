@@ -53,7 +53,7 @@ function App() {
           placeholder="Write a new task"
         />
         <button
-          className="form__button"
+          className="form__button--submit"
           type="submit"
         >
           Create
@@ -64,20 +64,27 @@ function App() {
           <div
             key={todo.id}
             className="todo"
+            data-before={todo.text}
           >
-            <input
-              className="todo__checkbox"
-              type="checkbox"
-              onClick={() => handleToggleTodo(todo)}
-              //checked={todo.done}
-            />
-            <p className="todo__text">
-              {todo.text}
-              <span className="todo__checkLine"></span>
-            </p>
+            
+            <label
+              className="todo__label"
+              id={todo.id}
+            >
+              
+              <input
+                className="todo__checkbox"
+                type="checkbox"
+                name={todo.id}
+                onClick={() => handleToggleTodo(todo)}
+                //checked={todo.done}
+              />
+              <p className="todo__text">{todo.text}</p>
+             {/* <span className="todo__checkLine"></span>*/} 
+            </label>
             
             <button
-            className="todo__button--delete"
+              className="todo__button--delete"
               type="button"
             >
               X
