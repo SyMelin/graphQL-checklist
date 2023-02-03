@@ -1,5 +1,5 @@
 import { useMutation } from '@apollo/client'
-import { GET_TODOS, TOGGLE_TODO, DELETE_TODO } from '../../utils/queries';
+import { GET_TODOS, TOGGLE_TODO, DELETE_TODO } from '../../graphql/queries';
 import "./Todo.css"
 
 function Todo({ todo }) {

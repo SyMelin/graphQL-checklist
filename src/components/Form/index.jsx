@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useMutation } from '@apollo/client'
-import { GET_TODOS, ADD_TODO } from '../../utils/queries';
+import { GET_TODOS, ADD_TODO } from '../../graphql/queries';
 import "./Form.css"
 
 function Form() {

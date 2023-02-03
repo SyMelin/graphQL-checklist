@@ -1,8 +1,8 @@
 import { useQuery } from '@apollo/client'
-import { GET_TODOS } from '../../utils/queries';
-import Form from '../Form';
-import TodoList from '../TodoList';
-import './App.css';
+import { GET_TODOS } from '../../graphql/queries'
+import Form from '../Form'
+import TodoList from '../TodoList'
+import './App.css'
 
 function App() {
   const { loading, error, data } = useQuery(GET_TODOS)
